@@ -13,7 +13,7 @@ import java.util.Map;
  */
 @Getter
 @Setter
-public class ChainContextRef implements Serializable {
+public class ChainContext implements Serializable {
 
     /**
      * ExecutorConfig类名与ExecutorContext实例的映射

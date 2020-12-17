@@ -1,7 +1,7 @@
 package com.github.brezp.design.executorchain;
 
 import com.github.brezp.design.executorchain.config.AbstractExecutorConfig;
-import com.github.brezp.design.executorchain.context.ApplicationChainContextRef;
+import com.github.brezp.design.executorchain.context.ApplicationChainContext;
 import com.github.brezp.design.executorchain.context.ExecutorContext;
 import com.github.brezp.design.executorchain.exec.Executor;
 import com.github.brezp.design.executorchain.exec.ExecutorChain;
@@ -10,11 +10,12 @@ import java.util.LinkedList;
 import java.util.Map;
 
 /**
- * ApplicationExecutorChain
+ * ExecutorChainBootstrap
  *
  *
+ * @author brezp
  */
-public class ApplicationExecutorChain<T extends ExecutorContext> implements ExecutorChain {
+public class ExecutorChainBootstrap<T extends ExecutorContext> implements ExecutorChain {
 
     private LinkedList<AbstractExecutorConfig<T>> executorConfigs;
 
@@ -53,10 +54,10 @@ public class ApplicationExecutorChain<T extends ExecutorContext> implements Exec
         executorConfigs.add(executorConfig);
     }
 
-    private ApplicationChainContextRef chainContextRef = new ApplicationChainContextRef();
+    private ApplicationChainContext chainContextRef = new ApplicationChainContext();
 
     @Override
-    public ApplicationChainContextRef getChainContextRef() {
+    public ApplicationChainContext getChainContextRef() {
         return this.chainContextRef;
     }
 }

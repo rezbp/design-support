@@ -14,9 +14,9 @@ import java.util.HashMap;
  */
 @Getter
 @Setter
-public class ApplicationChainContextRef extends ChainContextRef implements Serializable {
+public class ApplicationChainContext extends ChainContext implements Serializable {
 
-    public ApplicationChainContextRef() {
+    public ApplicationChainContext() {
         configClazz2ExecutorContextMap = new HashMap<>(0);
     }
 
