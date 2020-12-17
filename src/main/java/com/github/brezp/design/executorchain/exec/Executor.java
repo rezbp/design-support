@@ -9,8 +9,6 @@ import com.github.brezp.design.executorchain.context.ExecutorContext;
  */
 public interface Executor<T extends ExecutorContext> {
 
-//    void init(ExecutorConfig config);
-
     void execute(T context, ExecutorChain chain) throws Exception;
 
     void postExecute(T context, ExecutorChain chain) throws Exception;

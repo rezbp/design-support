@@ -6,7 +6,7 @@ import com.github.brezp.design.executorchain.context.ExecutorContext;
 /**
  * AbstractExecutorConfig
  *
- * @author wangdahao
+ *
  */
 public abstract class AbstractExecutorConfig<T extends ExecutorContext> implements ExecutorConfig<T> {
 
