@@ -6,6 +6,7 @@ import com.github.brezp.design.executorchain.context.ChainContext;
  * StageExecutorChain
  *
  *
+ * @author brezp
  */
 public interface ExecutorChain {
 

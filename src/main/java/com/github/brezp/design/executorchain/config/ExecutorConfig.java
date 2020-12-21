@@ -6,6 +6,7 @@ import com.github.brezp.design.executorchain.context.ExecutorContext;
  * StageExecutorConfig
  *
  *
+ * @author brezp
  */
 public interface ExecutorConfig<T extends ExecutorContext> {
 
