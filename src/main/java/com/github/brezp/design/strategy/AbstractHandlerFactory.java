@@ -12,8 +12,7 @@ import lombok.extern.slf4j.Slf4j;
  * @author brezp
  */
 @Slf4j
-@UtilityClass
-public class AbstractHandlerFactory {
+public abstract class AbstractHandlerFactory {
 
     /**
      * 创建handler处理，并返回第一个handler实例
@@ -21,7 +20,7 @@ public class AbstractHandlerFactory {
      * @param handlerName handler名称
      * @return 第一个handler实例
      */
-    public IHandler createHandler(String handlerName) throws Exception {
+    public IHandler handler(String handlerName) throws Exception {
         if (!"".equals(handlerName)) {
             Handler handler = Handler.getHandler(handlerName);
             return (IHandler) Class.forName(handler.getClazz().getName()).newInstance();
