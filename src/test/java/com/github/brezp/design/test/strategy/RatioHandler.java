@@ -8,7 +8,6 @@ import java.util.Map;
 /**
  * 占比计算
  *
- * @author wangdahao
  */
 public class RatioHandler implements IHandler<String> {
 

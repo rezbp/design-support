@@ -5,7 +5,7 @@ import java.util.Map;
 /**
  * AbstractHandler
  *
- * @author wangdahao
+ *
  */
 public interface IHandler<IN> {
 

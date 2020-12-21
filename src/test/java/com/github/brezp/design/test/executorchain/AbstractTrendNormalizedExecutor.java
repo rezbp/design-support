@@ -13,7 +13,6 @@ import java.io.Serializable;
  * 3、生成待归一化文件；
  * 4、上传文件到归一化工具以及创建归一化任务
  *
- * @author wangdahao
  */
 @Slf4j
 public abstract class AbstractTrendNormalizedExecutor implements Executor<TrendNormalizedExecutorContext>, Serializable {

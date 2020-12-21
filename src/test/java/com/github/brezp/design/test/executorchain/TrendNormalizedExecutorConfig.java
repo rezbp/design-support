@@ -7,7 +7,6 @@ import com.github.brezp.design.executorchain.exec.Executor;
 /**
  * TrendNormalizedExecutorConfig
  *
- * @author wangdahao
  */
 public class TrendNormalizedExecutorConfig extends AbstractExecutorConfig<TrendNormalizedExecutorContext> {
 

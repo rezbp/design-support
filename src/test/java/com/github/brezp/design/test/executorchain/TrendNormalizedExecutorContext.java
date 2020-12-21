@@ -7,7 +7,6 @@ import lombok.experimental.Accessors;
 /**
  * TrendNormalizedExecutorContext
  *
- * @author wangdahao
  */
 @Getter
 @Setter

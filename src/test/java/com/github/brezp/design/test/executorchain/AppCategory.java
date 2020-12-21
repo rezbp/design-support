@@ -14,7 +14,6 @@ import java.util.stream.Collectors;
 /**
  * 品类实体
  *
- * @author wangdahao
  */
 @Getter
 @Setter

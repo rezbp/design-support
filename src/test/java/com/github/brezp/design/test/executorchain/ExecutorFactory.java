@@ -9,7 +9,6 @@ import lombok.experimental.UtilityClass;
 /**
  * AppStageExecutorFactory
  *
- * @author wangdahao
  */
 @SuppressWarnings("rawtypes")
 @UtilityClass
