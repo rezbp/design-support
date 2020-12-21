@@ -11,7 +11,6 @@ import lombok.extern.slf4j.Slf4j;
  *
  * @author brezp
  */
-@Slf4j
 public abstract class AbstractHandlerFactory {
 
     /**
