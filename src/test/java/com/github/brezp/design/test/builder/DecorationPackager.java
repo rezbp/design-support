@@ -1,8 +1,5 @@
 package com.github.brezp.design.test.builder;
 
-import com.github.brezp.design.builder.IMenu;
-import com.github.brezp.design.builder.IMatter;
-
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +7,7 @@ import java.util.List;
 /**
  * 装修包
  */
-public class DecorationPackageMenu implements BuildMenu {
+public class DecorationPackager implements BuildMenu {
 
     private List<Matter> list = new ArrayList<Matter>();  // 装修清单
     private BigDecimal price = BigDecimal.ZERO;      // 装修价格
@@ -18,10 +15,10 @@ public class DecorationPackageMenu implements BuildMenu {
     private BigDecimal area;  // 面积
     private String grade;     // 装修等级；豪华欧式、轻奢田园、现代简约
 
-    private DecorationPackageMenu() {
+    private DecorationPackager() {
     }
 
-    public DecorationPackageMenu(Double area, String grade) {
+    public DecorationPackager(Double area, String grade) {
         this.area = new BigDecimal(area);
         this.grade = grade;
     }
