@@ -5,5 +5,4 @@ package com.github.brezp.design.builder;
  */
 public  abstract  class AbstractBuilder {
 
-
 }
