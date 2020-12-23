@@ -2,8 +2,6 @@ package com.github.brezp.design.strategy;
 
 import com.google.common.collect.Lists;
 import lombok.Getter;
-import lombok.experimental.UtilityClass;
-import lombok.extern.slf4j.Slf4j;
 
 /**
  * AbstractHandlerFactory

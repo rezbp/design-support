@@ -7,13 +7,13 @@ import java.util.Date;
  */
 public class MetaInfo {
 
-    private String userId;
-
     private String bizId;
 
     private Date bizTime;
 
-    private String desc;
+    private String bizDesc;
+
+    private String userId;
 
     public String getUserId() {
         return userId;
@@ -40,10 +40,10 @@ public class MetaInfo {
     }
 
     public String getDesc() {
-        return desc;
+        return bizDesc;
     }
 
     public void setDesc(String desc) {
-        this.desc = desc;
+        this.bizDesc = desc;
     }
 }
