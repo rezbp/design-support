@@ -5,6 +5,8 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.Map;
 
 /**
+ * 适配器模式的主要作⽤就是把原本不兼容的接⼝，通过适配修改做到统⼀。
+ *
  * @author brezp
  */
 public abstract class AbstractAdapter {
