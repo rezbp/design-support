@@ -1,5 +1,5 @@
 package com.github.brezp.design.test.executorchain;
-import com.github.brezp.design.executorchain.context.ExecutorContext;
+import com.github.brezp.design.executorchain.exector.ExecutorContext;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.Accessors;

@@ -1,8 +1,8 @@
 package com.github.brezp.design.test.executorchain;
 
 import com.github.brezp.design.executorchain.ExecutorChainBootstrap;
-import com.github.brezp.design.executorchain.config.AbstractExecutorConfig;
-import com.github.brezp.design.executorchain.context.ExecutorContext;
+import com.github.brezp.design.executorchain.exector.AbstractExecutor;
+import com.github.brezp.design.executorchain.exector.ExecutorContext;
 import lombok.Builder;
 import lombok.experimental.UtilityClass;
 
@@ -23,7 +23,7 @@ public class ExecutorFactory {
         ExecutorChainBootstrap<T> executorChain = new ExecutorChainBootstrap<>();
 
         // 数据导出
-        AbstractExecutorConfig normalizedExecutorConfig = new TrendNormalizedExecutorConfig(new ProductTrendNormalizedExecutor(), initParam.appCategory, initParam.socialIndexAndType, initParam.ecomIndexAndType,
+        AbstractExecutor normalizedExecutorConfig = new TrendNormalizedExecutor(new ProductTrendNormalizedExecutor(), initParam.appCategory, initParam.socialIndexAndType, initParam.ecomIndexAndType,
                 initParam.normalizedTaskName, initParam.normalizedTaskDescription, initParam.time, initParam.lastTobeNormalizedFilePath, "product.trend.normalized.hdfsPath");
         executorChain.addExecutor(normalizedExecutorConfig);
         return executorChain;

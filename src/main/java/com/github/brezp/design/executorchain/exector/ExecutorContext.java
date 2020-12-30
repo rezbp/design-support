@@ -1,4 +1,4 @@
-package com.github.brezp.design.executorchain.context;
+package com.github.brezp.design.executorchain.exector;
 
 /**
  * StageExecutorContext

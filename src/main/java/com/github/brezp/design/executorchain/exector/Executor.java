@@ -1,6 +1,6 @@
-package com.github.brezp.design.executorchain.exec;
+package com.github.brezp.design.executorchain.exector;
 
-import com.github.brezp.design.executorchain.context.ExecutorContext;
+import com.github.brezp.design.executorchain.chain.ExecutorChain;
 
 /**
  * StageExecutor

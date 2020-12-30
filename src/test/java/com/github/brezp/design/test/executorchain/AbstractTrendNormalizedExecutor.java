@@ -1,7 +1,7 @@
 package com.github.brezp.design.test.executorchain;
 
-import com.github.brezp.design.executorchain.exec.Executor;
-import com.github.brezp.design.executorchain.exec.ExecutorChain;
+import com.github.brezp.design.executorchain.exector.Executor;
+import com.github.brezp.design.executorchain.chain.ExecutorChain;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.Serializable;

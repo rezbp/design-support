@@ -1,10 +1,10 @@
 package com.github.brezp.design.executorchain;
 
-import com.github.brezp.design.executorchain.config.AbstractExecutorConfig;
-import com.github.brezp.design.executorchain.context.ApplicationChainContext;
-import com.github.brezp.design.executorchain.context.ExecutorContext;
-import com.github.brezp.design.executorchain.exec.Executor;
-import com.github.brezp.design.executorchain.exec.ExecutorChain;
+import com.github.brezp.design.executorchain.exector.AbstractExecutor;
+import com.github.brezp.design.executorchain.chain.ApplicationChainContext;
+import com.github.brezp.design.executorchain.exector.ExecutorContext;
+import com.github.brezp.design.executorchain.exector.Executor;
+import com.github.brezp.design.executorchain.chain.ExecutorChain;
 
 import java.util.LinkedList;
 import java.util.Map;
@@ -17,14 +17,14 @@ import java.util.Map;
  */
 public class ExecutorChainBootstrap<T extends ExecutorContext> implements ExecutorChain {
 
-    private LinkedList<AbstractExecutorConfig<T>> executorConfigs;
+    private LinkedList<AbstractExecutor<T>> executors;
 
     private int pos = 0;
 
     @Override
     public void execute() throws Exception {
-        if (pos < executorConfigs.size()) {
-            AbstractExecutorConfig<T> executorConfig = executorConfigs.get(pos++);
+        if (pos < executors.size()) {
+            AbstractExecutor<T> executorConfig = executors.get(pos++);
             Executor<T> executor = executorConfig.getExecutor();
 
             T executorContext;
@@ -47,11 +47,11 @@ public class ExecutorChainBootstrap<T extends ExecutorContext> implements Execut
         }
     }
 
-    public void addExecutor(AbstractExecutorConfig<T> executorConfig) {
-        if (executorConfigs == null) {
-            executorConfigs = new LinkedList<>();
+    public void addExecutor(AbstractExecutor<T> executor) {
+        if (executors == null) {
+            executors = new LinkedList<>();
         }
-        executorConfigs.add(executorConfig);
+        executors.add(executor);
     }
 
     private ApplicationChainContext chainContextRef = new ApplicationChainContext();

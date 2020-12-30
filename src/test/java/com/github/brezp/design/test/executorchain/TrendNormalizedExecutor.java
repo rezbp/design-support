@@ -1,14 +1,14 @@
 package com.github.brezp.design.test.executorchain;
 
 
-import com.github.brezp.design.executorchain.config.AbstractExecutorConfig;
-import com.github.brezp.design.executorchain.exec.Executor;
+import com.github.brezp.design.executorchain.exector.AbstractExecutor;
+import com.github.brezp.design.executorchain.exector.Executor;
 
 /**
- * TrendNormalizedExecutorConfig
+ * TrendNormalizedExecutor
  *
  */
-public class TrendNormalizedExecutorConfig extends AbstractExecutorConfig<TrendNormalizedExecutorContext> {
+public class TrendNormalizedExecutor extends AbstractExecutor<TrendNormalizedExecutorContext> {
 
     private AppCategory appCategory;
     private String socialIndexAndType;
@@ -19,7 +19,7 @@ public class TrendNormalizedExecutorConfig extends AbstractExecutorConfig<TrendN
     private String lastTobeNormalizedFilePath;
     private String normalizedHdfsDir;
 
-    public TrendNormalizedExecutorConfig(
+    public TrendNormalizedExecutor(
             Executor<TrendNormalizedExecutorContext> executor, AppCategory appCategory,
             String socialIndexAndType, String ecomIndexAndType,
             String normalizedTaskName, String normalizedTaskDescription, String time,
