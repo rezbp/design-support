@@ -14,7 +14,6 @@ import java.io.Serializable;
  * 4、上传文件到归一化工具以及创建归一化任务
  *
  */
-@Slf4j
 public abstract class AbstractTrendNormalizedExecutor implements Executor<TrendNormalizedExecutorContext>, Serializable {
 
 

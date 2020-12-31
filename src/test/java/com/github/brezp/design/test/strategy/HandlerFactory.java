@@ -11,7 +11,6 @@ import lombok.extern.slf4j.Slf4j;
  * HandlerFactory
  *
  */
-@Slf4j
 public class HandlerFactory extends AbstractHandlerFactory {
 
     @Getter

@@ -6,7 +6,6 @@ import lombok.extern.slf4j.Slf4j;
  * ProductTrendNormalizedExecutor
  *
  */
-@Slf4j
 public class ProductTrendNormalizedExecutor extends AbstractTrendNormalizedExecutor {
 
 

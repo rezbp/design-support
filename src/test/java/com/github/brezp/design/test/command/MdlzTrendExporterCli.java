@@ -18,7 +18,6 @@ import java.util.concurrent.*;
  * 亿滋结果榜单、关联,输出
  *
  */
-@Slf4j
 public class MdlzTrendExporterCli implements ICmdLine {
 
     private static final String ALGO_FINISHED = "ALGO_FINISHED";
